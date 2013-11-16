@@ -9,5 +9,5 @@ def input(request):
 			cd=form.cleaned_data
 			return render(request, 'report.html',{report:cd['status']})
 	form=InputForm()
-	return render(request, 'input.html', {'form':form})
+	return render(request, 'index.html', {'form':form})
 
