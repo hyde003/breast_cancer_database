@@ -2011,8 +2011,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #428bca;
-  border-color: #357ebd;
+  background-color: #ff69b4;
+  border-color: #333333;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -2617,7 +2617,7 @@ input[type="button"].btn-block {
 .glyphicon-folder-open:before {
   content: "\e118";
 }
-.glyphicon-resize-vertical:before {
+.glyphicon-resize-verticontainer:before {
   content: "\e119";
 }
 .glyphicon-resize-horizontal:before {

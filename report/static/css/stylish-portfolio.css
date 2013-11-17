@@ -13,10 +13,18 @@ body {
   text-align: center;
 }
 
-.vert-text h1 {
+.vert-text h1{
+  padding: 0;
+  margin: 0;
+  color: black;
+  font-size: 4.5em;
+  font-weight: 700;
+}
+.vert-text h2 {
   padding: 0;
   margin: 0;
   color: white;
+  text-shadow: black 2px 2px 0.5px;
   font-size: 4.5em;
   font-weight: 700;
 }
@@ -118,7 +126,7 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
-  background: url(../img/bg2.jpg) no-repeat center center fixed; 
+  background: url(../img/bg.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -134,7 +142,7 @@ body {
 /* Services */
 
 .services {
-  background: #7fbbda;
+  background: #CC3366;
   padding: 50px 0;
   color: #ffffff;
 }
@@ -188,7 +196,7 @@ i.service-icon {
 
 .call-to-action {
   color: #ffffff;
-  background: #0a5175;
+  background: #333333;
   padding: 50px 0;
 }
 
