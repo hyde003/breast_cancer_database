@@ -26,3 +26,12 @@ def patient_login(request):
 			return render(request, 'report.html',{report:cd['status']})
 	form=InputForm()
 	return render(request, 'patient_login.html', {'form':form})
+def curator_login(request):
+	if request.method == 'POST':
+		form=InputForm(request.POST)
+		if form.is_valid():
+			cd=form.cleaned_data
+			return render(request, 'report.html',{report:cd['status']})
+	form=InputForm()
+	return render(request, 'curator_login.html', {'form':form})
+
