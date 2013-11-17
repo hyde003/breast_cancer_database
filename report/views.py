@@ -10,7 +10,7 @@ def input(request):
 			return render(request, 'report.html',{report:cd['status']})
 	form=InputForm()
 	return render(request, 'index.html', {'form':form})
-def input(request):
+def physician_login(request):
 	if request.method == 'POST':
 		form=InputForm(request.POST)
 		if form.is_valid():
