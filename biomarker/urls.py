@@ -6,6 +6,7 @@ from django.conf.urls import patterns, include, url
 
 urlpatterns = patterns('',
 	url(r'^index/', include('report.urls')),
+	url(r'^register/', include('registrations.urls')),
     # Examples:
     # url(r'^$', 'biomarker.views.home', name='home'),
     # url(r'^biomarker/', include('biomarker.foo.urls')),

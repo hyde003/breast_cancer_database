@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,19 +8,21 @@
     <meta name="author" content="">
 
     <title>Breast Cancer Database</title>
+    {% load staticfiles %}
 
     <!-- Bootstrap core CSS -->
-    <link href="/static/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="{% static "/css/bootstrap.css" %}" type="text/css" rel="stylesheet">
 
     <!-- Add custom CSS here -->
-    <link href="/static/css/stylish-portfolio.css" type="text/css" rel="stylesheet">
-    <link href="/static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{% static "/css/stylish-portfolio.css" %}" type="text/css" rel="stylesheet">
+    <link href="{% static "/font-awesome/css/font-awesome.min.css" %}" rel="stylesheet">
   </head>
 
   <body>
-  <link href="/static/css/stylish-portfolio.css" type="text/css" rel="stylesheet">
-  <link href="/static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="/static/css/bootstrap.css" type="text/css" rel="stylesheet">
+  {% load staticfiles %}
+  <link href="{% static "/css/stylish-portfolio.css" %}" type="text/css" rel="stylesheet">
+  <link href="{% static "/font-awesome/css/font-awesome.min.css" %}" rel="stylesheet">
+  <link href="{% static "/css/bootstrap.css" %}" type="text/css" rel="stylesheet">
 
   <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -311,8 +314,8 @@
 
     <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
 
     <!-- Custom JavaScript for the Side Menu and Smooth Scrolling - Put in a custom JavaScript file to clean this up -->
     <script>
