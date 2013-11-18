@@ -1,10 +1,13 @@
 from django.conf.urls import patterns, include, url
+from biomarker import settings
+from report import urls
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
 
 urlpatterns = patterns('',
+	url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT }),
 	url(r'^index/', include('report.urls')),
 	url(r'^register/', include('registrations.urls')),
     # Examples:

@@ -11,18 +11,17 @@
     {% load staticfiles %}
 
     <!-- Bootstrap core CSS -->
-    <link href="{% static "/css/bootstrap.css" %}" type="text/css" rel="stylesheet">
-
+    <link href="{% static 'css/bootstrap.css' %}" type="text/css" rel="stylesheet">
     <!-- Add custom CSS here -->
-    <link href="{% static "/css/stylish-portfolio.css" %}" type="text/css" rel="stylesheet">
-    <link href="{% static "/font-awesome/css/font-awesome.min.css" %}" rel="stylesheet">
+    <link href="{% static 'css/stylish-portfolio.css' %}" type="text/css" rel="stylesheet">
+    <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
   </head>
 
   <body>
   {% load staticfiles %}
-  <link href="{% static "/css/stylish-portfolio.css" %}" type="text/css" rel="stylesheet">
-  <link href="{% static "/font-awesome/css/font-awesome.min.css" %}" rel="stylesheet">
-  <link href="{% static "/css/bootstrap.css" %}" type="text/css" rel="stylesheet">
+  <link href="{% static 'css/stylish-portfolio.css' %}" type="text/css" rel="stylesheet">
+  <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/bootstrap.css' %}" type="text/css" rel="stylesheet">
 
   <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -73,10 +72,10 @@
         <div class="row">
           <div class="col-md-3 col-md-offset-0 text-center">
             <div class="service-item">
-              <img class="img-circle" src="report/static/img/icons/team_member1.jpg" alt="team member">
+              <img class="img-circle" src= "{% static 'img/icons/team_member1.jpg' %}" alt="team_member">
               <br><br><br>
               <h4>Xinglu Wang</h4>
-              <p>Graduate Student of Computer Science, University of San Francisco.</p>
+              <p>Graduate Student, Computer Science, University of San Francisco.</p>
               <div class="social_profiles">
                 <ul class="social-bookmarks col-md-offset-5">
                   <li class="facebook"><a href="https://www.facebook.com/profile.php?id=100003492149235">facebook</a></li>
@@ -91,7 +90,7 @@
               <img class="img-circle" src="img/icons/team_member.jpg" alt="team member">
               <br><br><br>
               <h4>Hai Nguyen</h4>
-              <p>Graduate Student of Biotechnology, University of San Francisco.</p>
+              <p>Graduate Student, Biotechnology, University of San Francisco.</p>
               <div class="social_profiles">
                 <ul class="social-bookmarks">
                   <li class="facebook"><a href="">facebook</a></li>
@@ -106,7 +105,7 @@
               <img class="img-circle" src="img/icons/team_member.jpg" alt="team member">
               <br><br><br>
               <h4>Cindy Sridharan</h4>
-              <p>Graduate Student of Computer Science, University of San Francisco.</p>
+              <p>Graduate Student, Computer Science, University of San Francisco.</p>
               <div class="social_profiles">
                 <ul class="social-bookmarks">
                   <li class="facebook"><a href="">facebook</a></li>
@@ -121,7 +120,7 @@
               <img class="img-circle" src="img/team_member.jpg" alt="team member">
               <br><br><br>
               <h4>Amanda Lee</h4>
-              <p>Graduate Student of Biotechnology, University of San Francisco.</p>
+              <p>Graduate Student, Biotechnology, University of San Francisco.</p>
               <div class="social_profiles">
                 <ul class="social-bookmarks">
                   <li class="facebook"><a href="https://www.facebook.com/amanda.lee.14224094">facebook</a></li>
@@ -150,32 +149,32 @@
             <div class="service-item">
             <i class="service-icon fa fa-rocket"></i>
             <br><br><br>
-              <h4>Spacecraft Repair</h4>
-              <p>Did your navigation system shut down in the middle of that asteroid field? We can repair any dings and scrapes to your spacecraft!</p>
+              <h4>Treatment</h4>
+              <p>We collect information about biomarkers and suggest treatments! Users will be able to keep track of their progress during their course of treatment.</p>
             </div>
           </div>
           <div class="col-md-3 text-center">
             <div class="service-item">
             <i class="service-icon fa fa-magnet"></i>
             <br><br><br>
-              <h4>Problem Solving</h4>
-              <p>Need to know how magnets work? Our problem solving solutions team can help you identify problems and conduct exploratory research.</p>
+              <h4>Matching Clinical Trials</h4>
+              <p>Finding the most effective clinical treatment for each patient based on their biomarkers and genetic profile!</p>
             </div>
           </div>
           <div class="col-md-3 text-center">
             <div class="service-item">
             <i class="service-icon fa fa-shield"></i>
             <br><br><br>
-              <h4>Blacksmithing</h4>
-              <p>Planning a time travel trip to the middle ages? Preserve the space time continuum by blending in with period accurate armor and weapons.</p>
+              <h4>Researcher Forum</h4>
+              <p>Allows researchers to discuss about breast cancer biomarkers and potential treatments</p>
             </div>
           </div>
           <div class="col-md-3 text-center">
             <div class="service-item">
             <i class="service-icon fa fa-shield"></i>
             <br><br><br>
-              <h4>Pencil Sharpening</h4>
-              <p>We've been voted the best pencil sharpening service for 10 consecutive years. If you have a pencil that feels dull, we'll get it sharp!</p>
+              <h4>Patient Support</h4>
+              <p>A forum for patients to communicate with each other about their treatments.</p>
             </div>
           </div>
         </div>
@@ -202,7 +201,30 @@
         </div>
         </div>
       </div> -->
-    <!-- /Services -->
+
+    <!-- /Form for donation -->
+<!-- Call to Action -->
+    <div id="donation" class="call-to-action">
+    <!-- Callout -->
+        <div class="callout">
+          <div class="vert-text">
+            <h2>Donate Your Data Now</h2>
+          </div>
+        </div>
+        <!-- /Callout -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            
+            <br>                        
+            <a href="./donation/" class="btn btn-lg btn-primary">Donate your Data</a>
+            
+            <br>         
+          </div>
+        </div>
+        </div>
+       </div>
+    <!-- /Call to Action -->
 
 
     <!-- Call to Action -->
@@ -218,17 +240,15 @@
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center">
             <h3>Click buttons below to login or sign up</h3>
-            <br><br>
-
-            <a href="/patient_login" class="btn btn-lg btn-primary">Patient Entrance</a>
-            <a href="/doctor_login" class="btn btn-lg btn-primary">Doctor Entrance</a>            
-            <a href="./patient_login" class="btn btn-lg btn-primary">Patient</a>
-            <a href="./physician_login" class="btn btn-lg btn-primary">Physician</a>   
-            <a href="./curator_login" class="btn btn-lg btn-primary">Curator</a>         
+            <br>                        
+            <a href="./patient_login/" class="btn btn-lg btn-primary">Patient</a>
+            <a href="./physician_login/" class="btn btn-lg btn-primary">Physician</a>   
+            <a href="./curator_login/" class="btn btn-lg btn-primary">Curator</a>
+            <br>         
           </div>
         </div>
-      </div>
-    </div>
+        </div>
+       </div>
     <!-- /Call to Action -->
 
     <!-- Contact -->
@@ -314,8 +334,8 @@
 
     <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/static/js/jquery.js"></script>
-    <script src="/static/js/bootstrap.js"></script>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
 
     <!-- Custom JavaScript for the Side Menu and Smooth Scrolling - Put in a custom JavaScript file to clean this up -->
     <script>
