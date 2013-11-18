@@ -1,0 +1,44 @@
+<html>
+    <head>
+        {% load staticfiles %}
+        <!-- Bootstrap core CSS -->
+        <link href="{% static 'css/bootstrap.css' %}" type="text/css" rel="stylesheet">
+        <!-- Add custom CSS here -->
+        <link href="{% static 'css/stylish-portfolio.css' %}" type="text/css" rel="stylesheet">
+        <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+        <title>
+             Input Form
+        </title>
+    </head>
+    <body>
+        {% load staticfiles %}
+        <!-- Bootstrap core CSS -->
+        <link href="{% static 'css/bootstrap.css' %}" type="text/css" rel="stylesheet">
+        <!-- Add custom CSS here -->
+        <link href="{% static 'css/stylish-portfolio.css' %}" type="text/css" rel="stylesheet">
+        <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+    {%if form.errors %}
+        <p style="color=red">
+        Please correct the following errors
+        </p>{% load staticfiles %}
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.css' %}" type="text/css" rel="stylesheet">
+    <!-- Add custom CSS here -->
+    <link href="{% static 'css/stylish-portfolio.css' %}" type="text/css" rel="stylesheet">
+    <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+    {% endif %}
+
+    <form action="" method="post">
+        <table>
+            {{ form.as_table }}
+        </table>
+        {% csrf_token %}
+        <input type="submit" value="Submit">
+
+    </form>
+
+    </body>
+
+
+</html>
